@@ -1,4 +1,4 @@
-import { Sequelize } from "sequelize";
+import { Sequelize } from "Sequelize";
 
 const db = new Sequelize ("EsenciaNamu", "Jurgen506_SQLLogin_1", "2yyuwlqwbm" ,
     {
