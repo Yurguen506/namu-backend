@@ -1,8 +1,8 @@
 import { Sequelize } from "sequelize";
 
-const db = new Sequelize ("EsenciaNamu", "Jurgen506_SQLLogin_1", "2yyuwlqwbm" ,
+const db = new Sequelize ("db_a8a328_esencianamu", "db_a8a328_esencianamu_admin", "EsenciaNamu123!" ,
     {
-        host: 'EsenciaNamu.mssql.somee.com',
+        host: 'sql5080.site4now.net',
         dialect: 'mssql'
     }
 );
