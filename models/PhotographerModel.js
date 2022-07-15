@@ -4,7 +4,7 @@ import { DataTypes } from "Sequelize";
 
 const PhotographerModel = db.define('photographer',
     {
-        ID : {type: DataTypes.INTEGER},
+        //ID : {type: DataTypes.INTEGER},
         name : {type: DataTypes.STRING},
         lastName : {type: DataTypes.STRING},
         bibliography : {type: DataTypes.STRING},
@@ -12,6 +12,9 @@ const PhotographerModel = db.define('photographer',
         phone : {type: DataTypes.STRING},
         facebook : {type: DataTypes.STRING},
         instagram : {type: DataTypes.STRING}
+    }, 
+    {
+        timestamps: false,
     }
 );
 

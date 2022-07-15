@@ -1,4 +1,4 @@
-import CoordinateModel from "../models/PhotographerModel.js"
+import CoordinateModel from "../models/CoordinateModel.js"
 
 export const getAllCoordinates = async (req, res) => {
 

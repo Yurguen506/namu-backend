@@ -1,6 +1,6 @@
 import { Sequelize } from "Sequelize";
 
-const db = new Sequelize ("EsenciaNamu", "root", "." ,
+const db = new Sequelize ("EsenciaNamu", "sa", "." ,
     {
         host: 'localhost',
         dialect: 'mssql'

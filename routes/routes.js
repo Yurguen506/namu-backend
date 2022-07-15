@@ -6,17 +6,17 @@ import { getAllCoordinates, getCoordinateById } from "../controllers/CoordinateC
 
 const router = express.Router();
 
-router.get("/", getAllPlaces)
-router.get( "/:id" , getPlaceById)
+router.get("/places/", getAllPlaces);
+router.get( "/place/:id" , getPlaceById)
 
-router.get("/", getAllPhotographers)
-router.get( "/:id" , getPhotographerById)
+router.get("/photographers/", getAllPhotographers)
+router.get( "/photographer/:id" , getPhotographerById)
 
-router.get("/", getAllCoordinates)
-router.get( "/:id" , getCoordinateById)
+router.get("/coordinates/", getAllCoordinates)
+router.get( "/coordinate/:id" , getCoordinateById)
 
 
-router.get ('/:id/preview', previewPlacesImages)
+router.get ('/image/:id', previewPlacesImages)
 
 // router.post ('/:id/upload', uploadFile.single("file"), uploadBlogImage)
 

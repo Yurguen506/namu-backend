@@ -4,10 +4,13 @@ import { DataTypes } from "Sequelize";
 
 const ImagesModel = db.define('images',
     {
-        ID : {type: DataTypes.INTEGER},
+        //ID : {type: DataTypes.INTEGER},
         idPlace : {type: DataTypes.INTEGER},
         idPhotographer : {type: DataTypes.INTEGER},
         image : {type: DataTypes.BLOB}
+    }, 
+    {
+        timestamps: false,
     }
 );
 
