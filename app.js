@@ -30,7 +30,7 @@ app.use ("/api", routes)
         res.send ("Hello world")
 })
 
-//app.listen (process.env.PORT || 5000, () => {
-app.listen (8000, () => {
+app.listen (process.env.PORT || 5000, () => {
+//app.listen (8000, () => {
     console.log("Server up running in " + process.env.PORT)
 })
