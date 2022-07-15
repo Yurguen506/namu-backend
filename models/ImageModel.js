@@ -1,6 +1,6 @@
 import db from "../database/db.js";
 
-import { DataTypes } from "Sequelize";
+import { DataTypes } from "sequelize";
 
 const ImagesModel = db.define('images',
     {
