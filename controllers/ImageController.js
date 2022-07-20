@@ -5,7 +5,7 @@ import ImageModel from '../models/ImageModel.js';
 
 export const previewPlacesImages = async (req , res) => {
     try {
-        const place = await ImageModel.find(
+        const place = await ImageModel.findAll(
             {
                 where : { idPlace : req.params.id }
             }
