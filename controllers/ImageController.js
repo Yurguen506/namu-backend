@@ -10,7 +10,7 @@ export const previewPlacesImages = async (req , res) => {
                 where : { idPlace : req.params.id }
             }
         )
-      res.json (place[place.length-1]);
+        res.json (place);
     } catch (error) {
         res.json ( {message : error.message})
     }
