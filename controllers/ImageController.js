@@ -16,6 +16,16 @@ export const previewPlacesImages = async (req , res) => {
     }
 }
 
+export const getAllImages = async (req, res) => {
+
+    try {
+        const images = await ImageModel.findAll();
+        res.json(images);
+    } catch (error) {
+        res.json ({message : error.message});
+    }
+}
+
 // export const uploadBlogImage = async (req, res) => {
 //     try {
 //       console.log(req);
