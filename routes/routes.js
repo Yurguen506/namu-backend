@@ -1,7 +1,7 @@
 import express from "express";
 import { getAllPlaces, getPlaceById } from "../controllers/PlaceController.js";
 import { getAllPhotographers, getPhotographerById } from "../controllers/PhotographerController.js";
-import { previewPlacesImages } from "../controllers/ImageController.js";
+import { previewPlacesImages, getAllImages } from "../controllers/ImageController.js";
 import { getAllCoordinates, getCoordinateById } from "../controllers/CoordinateController.js";
 
 const router = express.Router();
@@ -17,7 +17,7 @@ router.get( "/coordinate/:id" , getCoordinateById)
 
 
 router.get ('/image/:id', previewPlacesImages)
-router.get("/images/", getAllImages);
+router.get("/images/", getAllImages)
 
 // router.post ('/:id/upload', uploadFile.single("file"), uploadBlogImage)
 
