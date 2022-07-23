@@ -17,7 +17,7 @@ router.get( "/coordinate/:id" , getCoordinateById)
 
 
 router.get ('/image/:id', previewPlacesImages)
-router.get("/image/", getAllImages);
+router.get("/images/", getAllImages);
 
 // router.post ('/:id/upload', uploadFile.single("file"), uploadBlogImage)
 
